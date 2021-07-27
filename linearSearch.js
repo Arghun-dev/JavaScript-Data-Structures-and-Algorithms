@@ -1,7 +1,7 @@
 const array = [1, 3, 7, 90, 24, 92];
 
 
-// indexOf
+// indexOf => returns the index of the value of an array and if the value could not be found it will return -1
 console.log(array.indexOf(90));
 
 // findIndex => returns the index of the first element in the array which meets the condition
@@ -20,3 +20,10 @@ console.log(found);
 const array2 = [1, 2, 3];
 
 console.log(array2.includes(2));
+
+
+function ReturnIndexOfValue(arr, value) {
+    return arr.indexOf(value);
+}
+
+console.log(ReturnIndexOfValue([1,2,5,8], 4));
