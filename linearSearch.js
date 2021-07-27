@@ -21,9 +21,17 @@ const array2 = [1, 2, 3];
 
 console.log(array2.includes(2));
 
+// example return the index of the founded value 
+// or if you could not find the value inside the array return -1
 
 function ReturnIndexOfValue(arr, value) {
-    return arr.indexOf(value);
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i;
+        }
+    }
+
+    return -1;
 }
 
-console.log(ReturnIndexOfValue([1,2,5,8], 4));
+console.log(ReturnIndexOfValue([1,2,5,8], 15));
