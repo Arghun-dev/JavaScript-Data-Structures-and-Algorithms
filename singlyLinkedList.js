@@ -29,6 +29,5 @@ class SinglyLinkedList {
 var list = new SinglyLinkedList();
 list.push('Hello');
 list.push('GoodBye');
-list.push('Welcome Sweden');
-
+list.push('Hello Swedene');
 console.log('list: ', list);
