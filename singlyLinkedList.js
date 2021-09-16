@@ -11,4 +11,14 @@ class SinglyLinkedList {
     this.tail = null;
     this.length = 0;
   }
+
+  push(val) {
+    var newNode = new Node(val);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = this.head;
+    }
+  }
 }
+
+var list = new SinglyLinkedList();
