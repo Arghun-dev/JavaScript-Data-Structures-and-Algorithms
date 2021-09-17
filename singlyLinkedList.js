@@ -60,7 +60,7 @@ class SinglyLinkedList {
     }
   }
 
-  shift(){
+  shift() {
     if (!this.head) return undefined // for empty list
     let temp = this.head // to return removed value
     this.head = this.head.next
@@ -69,12 +69,36 @@ class SinglyLinkedList {
         this.tail = null 
     }
     return temp
-}
+  }
+
+  unshift(value) {
+    // create a new node
+    const newNode = new Node(value);
+
+    // check if Singly Linked List is empty
+    if (!this.length) {
+      // set the new node as the Singly Linked List's `tail`
+      this.tail = newNode;
+    } else {
+      // set the new node's `next` to the Singly Linked List's current `head`
+      newNode.next = this.head;
+    }
+
+    // set the new node as the Singly Linked List's `head`
+    this.head = newNode;
+
+    // increase the Singly Linked List's length by 1
+    this.length += 1;
+
+    // return the new node
+    return newNode;
+  }
 }
 
 var list = new SinglyLinkedList();
 list.push('Hello');
 list.push('GoodBye');
 list.push('Hello Swedene');
-list.pop('Hello Swedene');
+list.shift();
+list.unshift('Helloe');
 console.log('list: ', list);
