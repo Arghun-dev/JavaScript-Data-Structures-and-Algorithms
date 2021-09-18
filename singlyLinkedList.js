@@ -164,6 +164,13 @@ class SinglyLinkedList {
   }
 }
 
+// Big O of Singly Linked Lists => 
+
+// Insertion O(1)
+// Removal - It depends... O(1) or O(N)
+// Searching - O(N)
+// Access - O(N)
+
 var list = new SinglyLinkedList();
 list.push('Hello');
 list.push('GoodBye');
@@ -173,3 +180,12 @@ list.unshift('Helloe');
 console.log(list.get(1));
 list.set(1, 'New GoodBye');
 console.log('list: ', list);
+
+// RECAP
+
+// Singly Linked Lists are an excellent alternative to arrays when inseetion and deletion at the beginnning are 
+// frequently required. (remember inserting and deletig at the end of an array is not a big deal we don't have to re-index the items)
+
+// Arrays contain a built in index whereas Linked Lists do not
+
+// The idea of a list data structure that consists of nodes is the foundation for other data structures like Stacks and Queues.
