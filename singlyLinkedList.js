@@ -95,13 +95,16 @@ class SinglyLinkedList {
   }
 
   get(index) {
-    if (index < 0 || index >= this.length) return null;
-    var counter = 0;
+    if (index < 0 || index > this.length) return null;
+
     var current = this.head;
-    while(counter !== index) {
+    var counter = 0;
+
+    while (index !== counter) {
       current = current.next;
       counter++;
     }
+
     return current;
   }
 
@@ -123,5 +126,6 @@ list.push('GoodBye');
 list.push('Hello Swedene');
 list.shift();
 list.unshift('Helloe');
-list.get(1);
+console.log(list.get(1));
+list.set(1, 'New GoodBye');
 console.log('list: ', list);
