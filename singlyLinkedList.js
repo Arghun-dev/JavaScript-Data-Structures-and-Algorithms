@@ -93,6 +93,28 @@ class SinglyLinkedList {
     // return the new node
     return newNode;
   }
+
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    var counter = 0;
+    var current = this.head;
+    while(counter !== index) {
+      current = current.next;
+      counter++;
+    }
+    return current;
+  }
+
+  set(index, val) {
+    var foundNode = this.get(index);
+
+    if (foundNode) {
+      foundNode.val = val;
+      return true;
+    }
+
+    return false;
+  }
 }
 
 var list = new SinglyLinkedList();
@@ -101,4 +123,5 @@ list.push('GoodBye');
 list.push('Hello Swedene');
 list.shift();
 list.unshift('Helloe');
+list.get(1);
 console.log('list: ', list);
