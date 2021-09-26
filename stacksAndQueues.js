@@ -25,3 +25,14 @@
    // One note hwen we use and learn other algorithms later on some of them use a stack and Queues which we'll see in a second 
    // to help them to stroe data sort of to keep track of what's open process and what has yet to be processed, and we could use an
    // array implementation we could use her own class to keep it short.
+
+  
+// Pushing Pseudocode
+
+// .The function should accept a value
+// .Create a new node with that value
+// .If there are no nodes in the stack, set the first and last property to be the newly created node
+// .If there's at least one node, create a variable that stores the current first property on the stack
+// .Reset the first property to be the newly created node
+// .Set the next property on the node to be the previously created variable
+// .Increment the size of the stack by 1
