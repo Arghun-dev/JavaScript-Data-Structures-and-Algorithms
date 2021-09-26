@@ -15,3 +15,13 @@
 //  first step implementation of stacks using Linked List
 
 // Wrting Our own Stack from scratch
+
+ // first way is using an array 
+   // it works, we didn't have to write any new code we didn't even defined a class we just used an array and used the built in methods we get for free nothing wrong with that but we don't need you know indices for example which we get for free and we don't need dozens of methods come with arrays
+
+
+   // so here we're going to build our own stacks which doesn't using linked lists.
+
+   // One note hwen we use and learn other algorithms later on some of them use a stack and Queues which we'll see in a second 
+   // to help them to stroe data sort of to keep track of what's open process and what has yet to be processed, and we could use an
+   // array implementation we could use her own class to keep it short.
