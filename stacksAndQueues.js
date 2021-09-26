@@ -36,3 +36,30 @@
 // .Reset the first property to be the newly created node
 // .Set the next property on the node to be the previously created variable
 // .Increment the size of the stack by 1
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Stack {
+  constructor() {
+    this.first = null;
+    this.last = null;
+    this.size = 0;
+  }
+
+  push(val) {
+    var newNode = new Node(val);
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      var temp = this.first;
+      this.first = newNode;
+      this.first.next = temp;
+    }
+  }
+}
