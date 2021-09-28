@@ -22,3 +22,15 @@
 // . Siblings - A group of nodes with the same parent
 // . Leaf - A node with no children
 // . Edge - The connection between one node and another
+
+// Use Cases for Trees
+
+// Lots of different applications!
+
+// . HTML DOM
+// . Network Routing
+// . Abstract Syntax Trees
+// . Artificial Intelligence
+// . Folder in Operating Systems
+// . Computer File Systems
+// . JSON
