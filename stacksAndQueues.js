@@ -180,3 +180,12 @@ class Queue {
 // Searching - O(N)
 // Access - O(N)
 
+
+// Queues Recap
+
+// . Queues are a FIFO data structure, all elements are first in first out
+// . Queues are useful for processing tasks and are foundational for more complex data structures
+// . Insertion and Removal can be done in O(1)
+
+
+// So Stacks and Queues are very similar in a lot of ways, adding and removing things constant time, vary diffent in the order, first in first out for queue, last in first out for a stack
