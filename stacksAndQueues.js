@@ -130,3 +130,8 @@ q.push('third');
 q.shift();
 q.shift();
 q.shift();
+
+
+// but it has a problem, imagine we have a large list, if we remove some element from the first of the element all the elements have to be re-indexed.
+
+// So, it is defnitely make sense to create your own Queue Class for performance
