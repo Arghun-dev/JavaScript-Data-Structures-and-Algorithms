@@ -53,6 +53,13 @@
 // Searching - O(N)
 // Access - O(N)
 
+
+// Intro to Queues
+
+// Queus and Stacks are sister and very similar to each other
+
+// It's a data structure to add in and removing items from data structure but in another order, instead of last in first out for a stack, this is FIFO data structure! First in First out.
+
 class Node {
   constructor(value) {
     this.value = value;
