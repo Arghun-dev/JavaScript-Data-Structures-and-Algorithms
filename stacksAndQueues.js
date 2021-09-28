@@ -172,3 +172,11 @@ class Queue {
     return temp.value;
   }
 }
+
+// Big O of Queues
+
+// Insertion - O(1)
+// Removal - O(1)
+// Searching - O(N)
+// Access - O(N)
+
