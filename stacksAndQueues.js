@@ -135,3 +135,40 @@ q.shift();
 // but it has a problem, imagine we have a large list, if we remove some element from the first of the element all the elements have to be re-indexed.
 
 // So, it is defnitely make sense to create your own Queue Class for performance
+
+// so queue is add to the end and remove from the first of the list
+
+// adding to the end is called enque and removing from the first is called dequeu
+
+class Queue {
+  constructor() {
+    this.first = null;
+    this.last = null;
+    this.size = 0;
+  }
+
+  enqueue(val) {
+    var newNode = new Node(val);
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+
+    return ++this.size;
+  }
+
+  dequeue() {
+    if (!this.first) return null;
+
+    var temp = this.first;
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    this.first = this.first.next;
+    this.size--;
+    return temp.value;
+  }
+}
