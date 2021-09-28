@@ -76,8 +76,7 @@ class Stack {
   pop() {
     if (!this.first) return null;
 
-    if (this.size === 1) {
-      this.first = null;
+    if (this.first === this.last) {
       this.last = null;
     }
 
@@ -94,5 +93,5 @@ stack.push('sahand');
 stack.push('shahla');
 stack.pop();
 stack.pop();
-stack.push('moein');
+stack.pop();
 console.log(stack);
