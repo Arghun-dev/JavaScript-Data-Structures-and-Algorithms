@@ -34,3 +34,24 @@
 // . Folder in Operating Systems
 // . Computer File Systems
 // . JSON
+
+// Intro to Binary Trees
+
+// Kind of Trees
+
+// . Trees
+// . Binary Trees
+// . Binary Search Trees => Binary Search Trees are special type of Binary Tree
+
+// Recap
+
+// Trees => each node could have any number of child nodes 
+// Binary Trees => each node could have at most two children at the binary part
+// Binary Search Trees => they at most have two children per node and on top of that binary search trees are sorted in a particular way they are kept in order
+// BST (Binary Search Tree) => are used to store data that can be compared that is sortable so often classically we're talking about numbers and that's what we'll be working with.
+
+// How BSTS work?
+
+// . Every parent node has at most two children
+// . Every node to the left of a parent node is always less than the parent
+// . Every node to the right of a parent node is always greater than parent
