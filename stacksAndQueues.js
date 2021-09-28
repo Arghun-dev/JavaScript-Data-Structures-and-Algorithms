@@ -61,5 +61,11 @@ class Stack {
       this.first = newNode;
       this.first.next = temp;
     }
+    return ++this.size;
   }
 }
+
+var stack = new Stack();
+stack.push('arghun');
+stack.push('sahand');
+console.log(stack);
