@@ -58,7 +58,17 @@
 
 // Queus and Stacks are sister and very similar to each other
 
+// Imagine some people waiting for something in a line.
+
 // It's a data structure to add in and removing items from data structure but in another order, instead of last in first out for a stack, this is FIFO data structure! First in First out.
+
+// How do we use them in programming?
+
+// . Background tasks
+// . Uploading resources 
+// . Printing / Task processing
+
+// the first thing that was added in is going to be processed first
 
 class Node {
   constructor(value) {
@@ -109,3 +119,14 @@ stack.pop();
 stack.pop();
 stack.pop();
 console.log(stack);
+
+
+// Building a Queue with an array => it's super easy
+
+var q = [];
+q.push('first');
+q.push('second');
+q.push('third');
+q.shift();
+q.shift();
+q.shift();
