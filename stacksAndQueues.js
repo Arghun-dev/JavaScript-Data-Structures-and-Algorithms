@@ -37,6 +37,15 @@
 // .Set the next property on the node to be the previously created variable
 // .Increment the size of the stack by 1
 
+
+// Pop Pseudocode
+
+// .If there are no nodes in the stack, return null
+// .Create a temporary variavle to store the first property on the stack
+// .If there is only one node, set the first and last property to be null
+// .If there is more than one node, set the first property to be the next property on the current first
+// .Return the value of the node removed
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -63,9 +72,27 @@ class Stack {
     }
     return ++this.size;
   }
+
+  pop() {
+    if (!this.first) return null;
+
+    if (this.size === 1) {
+      this.first = null;
+      this.last = null;
+    }
+
+    var temp = this.first;
+    this.first = this.first.next;
+    this.size--;
+    return temp.value;
+  }
 }
 
 var stack = new Stack();
 stack.push('arghun');
 stack.push('sahand');
+stack.push('shahla');
+stack.pop();
+stack.pop();
+stack.push('moein');
 console.log(stack);
